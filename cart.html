@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your Food Dash order and pay securely.">
+    <title>Food Dash | Cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body class="cart-body">
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="./index.html" class="logo"><span>Food</span> Dash.</a>
+
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+            <label for="menu-checkbox" class="menu-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link active">Home</a></li>
+                <li><a href="./menu.html" class="nav-link">Menu</a></li>
+                <li><a href="offers" class="nav-link">Offers</a></li>
+                <li><a href="service" class="nav-link">Service</a></li>
+                <li><a href="about" class="nav-link">About Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="./menu.html" class="icon-btn" aria-label="Search food">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="./cart.html" class="icon-btn" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="./login.html" aria-label="Login">
+                    <img src="./img/man1.jpg" alt="User" class="avatar">
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="cart-page">
+        <div class="container cart-layout">
+            <section>
+                <a href="./menu.html" class="back-link"><i class="fa-solid fa-chevron-left"></i> Shopping Continue</a>
+
+                <p class="cart-label">Shopping Item</p>
+
+                <div class="cart-item">
+                    <img src="/img/m-food6.png" alt="Vermicelli upma">
+                    <p class="cart-item-name">Vermicelli Upma</p>
+                    <div class="quantity">
+                        <button type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                        <span>01</span>
+                        <button type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <span class="cart-price">₹200</span>
+                    <button type="button" class="remove-btn" aria-label="Remove item">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="/img/m-food6.png" alt="Vermicelli upma">
+                    <p class="cart-item-name">Vermicelli Upma</p>
+                    <div class="quantity">
+                        <button type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                        <span>01</span>
+                        <button type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <span class="cart-price">₹200</span>
+                    <button type="button" class="remove-btn" aria-label="Remove item">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="/img/m-food6.png" alt="Vermicelli upma">
+                    <p class="cart-item-name">Vermicelli Upma</p>
+                    <div class="quantity">
+                        <button type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                        <span>01</span>
+                        <button type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <span class="cart-price">₹200</span>
+                    <button type="button" class="remove-btn" aria-label="Remove item">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="./img/m-food6.png" alt="Vermicelli upma">
+                    <p class="cart-item-name">Vermicelli Upma</p>
+                    <div class="quantity">
+                        <button type="button" aria-label="Decrease quantity"><i class="fa-solid fa-minus"></i></button>
+                        <span>01</span>
+                        <button type="button" aria-label="Increase quantity"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <span class="cart-price">₹200</span>
+                    <button type="button" class="remove-btn" aria-label="Remove item">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </section>
+
+            <aside class="payment-card">
+
+                <div class="payment-top">
+                    <h2>Card Details</h2>
+                    <img src="img/man1.jpg" alt="User">
+                </div>
+
+                <form action="#" method="post">
+
+                    <label for="card-name">Name on card</label>
+                    <input type="text" id="card-name" name="cardName" placeholder="Name" required>
+
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="cardNumber" placeholder="1111 2222 3333 4444"
+                        inputmode="numeric" maxlength="19" required>
+
+                    <div class="payment-row">
+                        <div>
+                            <label for="card-expiry">Expiration date</label>
+                            <input type="text" id="card-expiry" name="cardExpiry" placeholder="mm/yy" maxlength="5"
+                                required>
+                        </div>
+
+                        <div>
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" name="cardCvv" placeholder="123" inputmode="numeric"
+                                maxlength="3" required>
+                        </div>
+                    </div>
+
+                    <div class="summary-box">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>₹800</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping (Free Delivery)</span>
+                            <span>₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Total (Tax incl.)</span>
+                            <span>₹800</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="checkout-btn">Checkout</button>
+
+                </form>
+            </aside>
+
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+                <a href="./index.html" class="logo"><span>Food</span> Dash.</a>
+                <p>Food Dash ©2026 All Rights Reserved</p>
+                <p>By - Piyush Prajapat</p>
+                <h4>Follow Us On</h4>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#offers">Offers</a></li>
+                    <li><a href="./index.html#service">Service</a></li>
+                    <li><a href="./index.html#about">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./index.html#service">Quality</a></li>
+                    <li><a href="./menu.html">Make A Choice</a></li>
+                    <li><a href="./index.html#service">Fast Delivery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+123456789</li>
+                    <li>Explore</li>
+                    <li>Info@Fooddash.com</li>
+                    <li>12, Maharashtra, India</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

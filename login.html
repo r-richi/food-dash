@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your Food Dash account.">
+    <title>Food Dash | Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+
+    <main class="auth-page">
+
+        <div class="auth-image">
+            <img src="./img/login.png" alt="Delicious Indian food">
+        </div>
+
+        <section class="auth-panel">
+            <div class="auth-box">
+
+                <a href="./index.html" class="logo"><span>Food</span> Dash.</a>
+
+                <h1>Login to your account!</h1>
+
+                <div class="social-buttons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-google"></i> Login with Google</a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook"></i> Login with Facebook</a>
+                </div>
+
+                <form class="auth-form" action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Youraddres@email.com"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+                        <i class="fa-regular fa-eye-slash eye"></i>
+                    </div>
+
+                    <button type="submit" class="auth-btn">Login to Continue</button>
+
+                    <p class="auth-switch">Don't have an account? <a href="./signup.html">Sign up</a></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
